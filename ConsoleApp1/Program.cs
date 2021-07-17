@@ -12,7 +12,7 @@ namespace ConsoleApp1
         {
             //SNIP - collect input (risk data from the user)
             try
-												{
+            {
                 // could be injected at a higher level possibly ninject or similar
                 IQuotationSystemHandler quotationSystemHandler = new QuotationSystemHandler();
 
@@ -38,7 +38,7 @@ namespace ConsoleApp1
                 Console.WriteLine(String.Format("You price is {0}, from insurer: {1}. This includes tax of {2}", price, insurer, tax));
             }
             catch (ArgumentException ex)
-												{
+            {
                 // argumented exceptions for deeper error message handling
                 Console.WriteLine(String.Format("There was an error - {0}", ex.Message));
             }
